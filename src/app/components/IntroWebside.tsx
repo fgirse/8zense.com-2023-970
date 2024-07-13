@@ -3,9 +3,9 @@ import React from 'react'
 import Image from 'next/image'
 //import EmailModal from '@/app/components/EmailModal'
 //import Button from '@/components/Button'
-import Skizze from '../../public/assets/images/skizze.png';
+import Skizze from '../../../public/assets/images/skizze.png';
 //import { useTranslations } from 'next-intl'
-import Space from '../../public/assets/images/spacecolored.svg';
+import Space from '../../../public/assets/images/space02.svg';
 //import  Locale  from '@//i18n';
 
 
