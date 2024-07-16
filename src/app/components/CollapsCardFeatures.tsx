@@ -14,7 +14,8 @@ import {
   FiUpload,
 } from "react-icons/fi";
 import Image from "next/image";
-import NetWorking from'@/public/assets/images/networking.svg'
+import NetWorking from'../../../public/assests/images/Individualität.gif'
+import Individualität from '../../../public/assets/images/Individualität.json'
 import Quality from'../../../public/assets/images/Quality.jpg';
 
 
@@ -107,7 +108,7 @@ export default CollapseCardFeatures;
 const features = [
   {
     title: "Individualität",
-    icon:"/assets/images/Individualität.gif",
+    icon: "/assets/images/Individualität02.gif",
     description:
       "Individualität ist bei 8zense.com gross geschrieben. Jede unserer Beton-Compositionen ist ein Einzelstück!"  
   },

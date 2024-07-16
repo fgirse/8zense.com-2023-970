@@ -18,7 +18,14 @@ import { ClientAnimationWrapper } from "@/app/components/ClientAnimationWrapper"
 
 import LogoEZ from "@/public/assets/images/Logo990.svg";
 import IntroWebside from "./components/IntroWebside";
-import ColCardFeature from '@/app/components/CollapsCardFeatures'
+import ColCardFeature from '@/app/components/CollapsCardFeatures';
+import FeatureAnimation from '@/app/components/FeatureAnimated';
+import { CallToAct } from '@/app/components/CallToAct';
+import Team from '@/app/components/HorizontalScrollCarousel';
+import ColorChangeCards from "./components/ColorChangeCards";
+import Animation3 from '@/app/components/LottiQuestion'
+
+
 export default function Home() {
   return (
     <>
@@ -37,6 +44,33 @@ export default function Home() {
             <section className="">
               <ColCardFeature />
             </section>
+            <section className="">
+              <FeatureAnimation />
+            </section>
+            <section className=''>
+
+          <CallToAct />
+
+        </section>
+
+        <section className='mt-3'>
+
+          <Animation3 />
+
+        </section>
+
+        <section className=''>
+
+          <ColorChangeCards />
+          </section>
+
+          <section className=''>
+
+            <Team />
+
+          </section>
+
+
           </div>
         </div>
       </main>
