@@ -5,8 +5,8 @@ import { Button } from "@/app/components/ui/button";
 import { Input } from "@/app/components/ui/input";
 ;import Image from "next/image";
 import ScrollToTop from "@/app/components/BackToTop/ScrollToTop";
-import Footer from"@/app/components/Footer"
-export default function FooterDemo() {
+import FooterComponent from"@/app/components/Footer"
+export default function Footer() {
   return (
     <footer className="mt-auto bg-neutral-600 w-full">
      
