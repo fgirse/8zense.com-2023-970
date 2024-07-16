@@ -53,11 +53,8 @@ export default function Home() {
 
         </section>
 
-        <section className='mt-3'>
-
-          <Animation3 />
-
-        </section>
+        
+        
 
         <section className=''>
 

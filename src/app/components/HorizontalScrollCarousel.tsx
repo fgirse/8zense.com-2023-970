@@ -7,16 +7,16 @@ const Example = () => {
   return (
     <div className="bg-neutral-800">
       <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold uppercase text-neutral-500">
+        <span className="font-semibold uppercase text-neutral-300">
           Scroll down
         </span>
       </div>
-      <h1 className="md:6xl text-center text-4xl uppercase text-zenseWhite lg:text-[5.33rem]">
+      <h1 className="md:6xl text-center text-4xl uppercase text-white lg:text-[5.33rem]">
         Das Team
       </h1>
       <HorizontalScrollCarousel />
       <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold uppercase text-neutral-500">
+        <span className="font-semibold uppercase text-neutral-300">
           Scroll up
         </span>
       </div>

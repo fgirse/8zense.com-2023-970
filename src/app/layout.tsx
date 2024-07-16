@@ -7,14 +7,16 @@ import { Metadata } from "next";
 import localFont from "next/font/local";
 import Navigation from "@/app/components/Navbar/Navbar2";
 import InfoBar from "@/app/components/InfoBar"
-
+import Newsletter from "@/app/components/Newsletter";
+import Footer from "@/app/components/Footer";
+import ScrollToTop from "./components/BackToTop/ScrollToTop";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://clerk-next-app.vercel.app/"),
   title: "Next.js Clerk Template",
   description:
     "A simple and powerful Next.js template featuring authentication and user management powered by Clerk.",
-  openGraph: { images: ["/og.png"] },
+  openGraph: { images: ["/assets/images/LogoEZ990.svg"] },
 };
 
 const geistSans = localFont({
@@ -60,6 +62,9 @@ export default function RootLayout({
       <Navigation/>
     </div>
           {children}
+          <Newsletter />
+          <ScrollToTop />
+          <Footer/>
         </body>
       </ClerkProvider>
 
