@@ -1,4 +1,4 @@
-import {Footer} from "@/app/components/Footer";
+import Footer from "@/app/components/Footer";
 //import Navigation from "@/app/components/Navbar/Navbar2";
 //import styles from'./about.module.css';
 //import ScrollToTop from "@/components/BackToTop/ScrollToTop";
