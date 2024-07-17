@@ -2,7 +2,7 @@ import { UserDetails } from "../components/user-details";
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
 import { CodeSwitcher } from "../components/code-switcher";
 import { LearnMore } from "../components/learn-more";
-import  Footer from "@/app/components/Footer";
+import   Footer from  "@/app/components/Footer";
 import { ClerkLogo } from "../components/clerk-logo";
 import { NextLogo } from "../components/next-logo";
 
@@ -46,7 +46,8 @@ export default async function DashboardPage() {
         </div>
       </main>
       <LearnMore cards={DASHBOARD_CARDS} />
-      <Footer />
     </>
   );
 }
+
+<Footer />
