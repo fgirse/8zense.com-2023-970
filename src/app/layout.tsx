@@ -8,7 +8,7 @@ import localFont from "next/font/local";
 import Navigation from "@/app/components/Navbar/Navbar2";
 import InfoBar from "@/app/components/InfoBar"
 import Newsletter from "@/app/components/Newsletter";
-import FooterComponent from "@/app/components/Footer"
+import { Footer} from "@/app/components/Footer"
 import ScrollToTop from "./components/BackToTop/ScrollToTop";
 
 export const metadata: Metadata = {
@@ -64,7 +64,7 @@ export default function RootLayout({
           {children}
           <Newsletter />
           <ScrollToTop />
-          <FooterComponent/>
+          <Footer/>
         </body>
       </ClerkProvider>
 
