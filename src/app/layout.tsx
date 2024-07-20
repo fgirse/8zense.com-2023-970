@@ -1,45 +1,28 @@
+import { ClerkProvider } from '@clerk/nextjs';
+import { Metadata } from 'next';
+import {ReactNode} from 'react';
+import './styles.css';
 
-                      
-import { ClerkProvider } from "@clerk/nextjs"
-import "./globals.css";
-import Script from "next/script";
-import { Metadata } from "next";
-import localFont from "next/font/local";
-import Navigation from "@/app/components/Navbar/Navbar2";
-import InfoBar from "@/app/components/InfoBar"
-import Newsletter from "@/app/components/Newsletter";
-//import { Footer } from "./components/Footer";
-import ScrollToTop from "./components/BackToTop/ScrollToTop";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://clerk-next-app.vercel.app/"),
-  title: "Next.js Clerk Template",
-  description:
-    "A simple and powerful Next.js template featuring authentication and user management powered by Clerk.",
-  openGraph: { images: ["/assets/images/LogoEZ990.svg"] },
+
+  title: '8zenSe.com',
+
+  description: 'LandingPage for startup, Interiore Design, Innenarchitektur, Desing Beton-Möbel ',
+
+  icons: {icon : "/assets/images/LogoEZ990.svg"}
+
+}
+
+type Props = {
+  children: ReactNode;
 };
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-});
-
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-});
-
-const imagePath: string = "/public/assets/images/LogoEZ990.svg";
-const brandName: string = "8zense.com"; 
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+// Since we have a `not-found.tsx` page on the root, a layout file
+// is required, even if it's just passing children through.
+export default function RootLayout({children}: Props) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <ClerkProvider
+<ClerkProvider
         appearance={{
           variables: { colorPrimary: "#000000" },
           elements: {
@@ -56,20 +39,18 @@ export default function RootLayout({
           },
         }}
       >
-        <body className={`min-h-screen flex flex-col antialiased `}>
-          <InfoBar/>
-          <div>
-      <Navigation/>
-    </div>
-          {children}
-          <Newsletter />
-          <ScrollToTop />
-          
-        </body>
-      </ClerkProvider>
-
-      <Script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-core.min.js" />
-      <Script src="https://cdn.jsdelivr.net/npm/prismjs@1/plugins/autoloader/prism-autoloader.min.js" />
+    <html> 
+      <body className="min-h-screen flex flex-col antialiased ">
+        
+            {children}
+        
+      </body>
     </html>
-  );
+    
+
+    </ClerkProvider>
+  )
+  
+
+
 }

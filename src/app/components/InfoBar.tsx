@@ -9,6 +9,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../../public/assets/images/LogoEZ990.svg";
+import LocaleSwitcher from "@/components/LocaleSwitcher";
 
 const InfoBar = () => {
   return (
@@ -23,11 +24,13 @@ const InfoBar = () => {
             <h1 className="hidden md:hover:translate-y-2 md:scale-125 md:hover:translate-x-2  md:mr-6 md:hover:text-slate-300 md:block md:text-lg xl:text-xl text-slate-400">
               8zenSe.com
             </h1>
+            <LocaleSwitcher />
           </div>
         </Link>
 
         <div className="w-1/2 text-5xl mr-5">
           <SignedOut>
+       
             <SignInButton>
             <button className="px-4 py-2 w-40 rounded-full bg-[#fcfc40] hover:bg-orange-600 text-slate-400 hover:text-white hover:border-2 text-xl font-bold uppercase">
                     Login
