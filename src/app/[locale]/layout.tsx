@@ -63,6 +63,8 @@ export default async function LocaleLayout({
         
           {children}
         </NextIntlClientProvider>
+        <Newsletter/>
+        <ScrollToTop/>
         </div>
         
         <Script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-core.min.js" />
