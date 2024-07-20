@@ -1,4 +1,11 @@
 {
+  "Email":{
+      "Email_Text_1": "Name",
+      "Email_Text_2": "Vorname",
+      "Email_Text_3": "e-mail"
+  },
+
+
   "Error": {
     "description": "<p>Es ist leider ein Problem aufgetreten.</p><p>Du kannst versuchen <retry>diese Seite neu zu laden</retry>.</p>",
     "title": "Etwas ist schief gelaufen!"

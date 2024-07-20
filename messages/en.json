@@ -1,4 +1,10 @@
 {
+  "Email":{
+      "Email_Text_1": "Name",
+      "Email_Text_2": "Prename",
+      "Email_Text_3": "e-mail"
+  },
+
   "Error": {
     "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
     "title": "Something went wrong!"

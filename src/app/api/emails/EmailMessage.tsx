@@ -25,7 +25,7 @@ const MessageUsEmail = ({ name, email, message }: MessageUsEmailProps) => {
   
   const previewText = `Weekly Updates 🚀${name} sent you a message.`;
   
-  const t = useTranslations("")
+  const t = useTranslations("Email")
   
   return (
     <Html>
@@ -35,7 +35,7 @@ const MessageUsEmail = ({ name, email, message }: MessageUsEmailProps) => {
         <Body className='bg-white my-auto mx-auto font-sans'>
           <Container className='my-[20px] mx-auto p-[20px] max-w-4xl'>
             <Heading className='text-black text-[20px] font-normal text-left'>
-              <strong>{t("Email_Text01")} {name},</strong>
+              <strong>{t("Email_Text_1")} {name},</strong>
             </Heading>
             <Text className='text-black text-[14px] leading-[24px]'>
               {message}
@@ -43,10 +43,10 @@ const MessageUsEmail = ({ name, email, message }: MessageUsEmailProps) => {
 
             <Hr className='my-[16px] mx-0 w-full' />
             <Text className='text-[#666666] text-[12px]'>
-             {t("Email_Text02")},
+             {t("Email_Text_2")},
             </Text>
             <Text className='text-[#666666] text-[12px]'>
-              {t("Email_Text03")}✨
+              {t("Email_Text_3")}✨
             </Text>
           </Container>
         </Body>
